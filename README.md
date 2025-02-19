@@ -29,9 +29,5 @@ Why This Project?
  > Deploys full-stack using cloud services (Vercel, Render, Railway).
 
 This project is a fun social experiment that could make exploring new places more interactive while also demonstrating proof of work across the full-stack development cycle.
-.
-.
-.
-.
-.
-.
+
+Backend Render Deployment link: https://s64-bbvibes.onrender.com
