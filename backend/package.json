@@ -4,8 +4,9 @@
   "description": "Project Title: MoodMap - Real-time Vibe Tracker\r Project Overview:\r MoodMap is a real-time \"mood map\" where users can share their current vibe at different locations using a simple color-coded system. Whether it's a chill café, an exciting concert, or a frustrating traffic jam, users can mark their vibe under different categories (e.g., restaurant, park, event). The vibes expire after 30 minutes, ensuring the map stays fresh and relevant.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js" },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
