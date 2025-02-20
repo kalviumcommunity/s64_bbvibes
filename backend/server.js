@@ -1,12 +1,16 @@
 const express = require('express');
 const app = express();
-const port = 8000;
+const connectDatabase = require('./database')
 
 app.get('/ping', (req, res) => {
-    res.send('Pong');
-});
+    try{
+    res.send('pong'); }
+    catch(error){
+        res.status(500).send('An error occured')
+    }
+    });
+    connectDatabase();
 
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
-});
-
+app.listen(8000, () => {
+    console.log(`Server is running on port http://localhost:8000`);
+    });
