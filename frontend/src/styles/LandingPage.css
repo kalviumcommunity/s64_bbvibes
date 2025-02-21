@@ -1,60 +1,187 @@
 /* General Styles */
-*{
-    
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000; /* Ensure full black background */
 }
+
 .landing-container {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: black;
-    color: white;
-  }
-  
-  /* Logo */
-  .logo {
-    width: 120px;
-    margin-bottom: 20px;
-  }
-  
-  /* Hero Section */
-  .hero {
-    padding: 50px;
-  }
-  
-  .cta-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 20px;
-  }
-  
-  .cta-button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* About Section */
-  .about {
-    padding: 50px;
-  }
-  
-  /* How It Works Section */
-  .how-it-works {
-    background-color: #1a1a1a;
-    padding: 50px;
-  }
-  
-  .how-it-works ol {
-    list-style: none;
-    padding: 0;
-  }
-  
-  /* Footer */
-  .footer {
-    background: #222;
-    color: white;
-    padding: 20px;
-  }
-  
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  text-align: center;
+  color: #fff;
+  overflow: auto;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 60px;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 10px rgba(0, 255, 255, 0.1); /* Neon glow */
+  height: 60px;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin-left: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #0ff; /* Neon blue */
+}
+
+/* Logo */
+.logo {
+  width: 140px;
+}
+
+/* Hero Section */
+.hero {
+  padding: 200px 50px 150px;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 4em;
+  margin-bottom: 30px;
+  text-shadow: 0px 0px 10px rgba(0, 255, 255, 0.8); /* Stronger neon glow */
+  letter-spacing: 1.2px;
+}
+
+.hero p {
+  font-size: 1.4em;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  color: #eee;
+}
+
+.cta-button {
+  background-color: #0ff; /* Neon blue */
+  color: #000;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.3em;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-top: 30px;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5); /* Neon glow */
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0bd; /* Darker neon blue */
+  box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.7);
+  transform: translateY(-3px);
+}
+
+/* About Section */
+.about {
+  padding: 100px 50px;
+  background-color: #111;
+}
+
+.about h2, .how-it-works h2 {
+  font-size: 3em;
+  margin-bottom: 40px;
+  text-shadow: 0px 0px 8px rgba(0, 255, 255, 0.8); /* Neon glow */
+}
+
+.about p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  color: #ddd;
+}
+
+/* How It Works Section */
+.how-it-works {
+  padding: 100px 50px;
+  background-color: #222;
+}
+
+.how-it-works ol {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.how-it-works li {
+  font-size: 1.3em;
+  line-height: 2;
+  margin-bottom: 30px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  text-align: left;
+  position: relative;
+  padding-left: 70px;
+  border: 1px solid rgba(0, 255, 255, 0.1); /* Neon border */
+}
+
+.how-it-works li span {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #0ff; /* Neon blue */
+  text-shadow: 0px 0px 5px rgba(0, 255, 255, 0.8);
+}
+
+/* Footer */
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  border-top: 1px solid rgba(0, 255, 255, 0.1); /* Neon border */
+}
+
+/* Canvas Background */
+#bgCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
